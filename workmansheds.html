@@ -35,36 +35,18 @@ body {
 
 div.indent {text-indent:30px; }
 div.indent2 {text-indent:150px; }
-.content-block {
-            margin-bottom: 20px; <!-- Space between content blocks -->
-            overflow: auto; <!-- Clears the float within the container -->
-        }
+		 .container {
+			width: 100%;       /* Takes full width of its parent */
+			max-width: 500px;  /* Prevents it from getting too huge */
+			margin: auto;      /* Centers the container */
+			text-align: center;
+		  }
 
-        .image-left {
-            float: left; <!-- Floats the image to the left -->
-            margin-right: 15px; <!-- Space between the image and text -->
-            margin-bottom: 10px;
-		    max-width: 300px; <!-- Max width for the image -->
-            height: auto;
-            border: 1px solid #ccc; <!-- Optional border for images -->
-            padding: 5px;
-			margin-left: 15px;
-			 margin-top: 10px;
-        }
-
-        .image-right {
-            float: right; <!-- Floats the image to the right -->
-            margin-left: 15px; <!-- Space between the image and text -->
-            margin-bottom: 10px;
-            max-width: 350px;
-            height: auto;
-            border: 1px solid #ccc;
-            padding: 5px;
-        }
-
-        h1, p {
-            margin: 0 0 10px 0;
-        }
+		  img {
+			width: 100%;       /* Autosizes to fill the container */
+			height: auto;      /* Maintains aspect ratio (crucial!) */
+			display: block;    /* Removes extra bottom space */
+		  }
 div.indent {text-indent:30px; }
 div.indent2 {text-indent:150px; }
 
@@ -78,18 +60,13 @@ div.indent2 {text-indent:150px; }
 Sheds and Structures<br><br>
 </span>
 </div>
-       
+		   <div class="container">
+		  <img src="\images\structures\hay.jpg" alt="Description">
+		  <p>Hay storage</p>
+		</div>    
     
 
-        <!-- Content Block 1: Image Left -->
-        <div class="content-block;" "style1;" style= "text-align:left;" >
-            <img src="\images\family\workman\snowbros.jpeg" alt="Sample image left" class="image-left">
-           <h2>Brothers</h2>
-            <div class = "indent"><span class="style1">  <p>The Workman brothers, all together, and playing in the snow.
-            </p></span> </div>
-        </div>
-		
-		<br>
+      
 
         <!-- Content Block 2: Image Right
         <div class="content-block" "style1;" style= "text-align:left;">
